@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="Zadanie2.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="7"/>
+        <CursorPos X="14" Y="24"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="Zadanie2.lpr"/>
+        <Caret Line="45" Column="14"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Zadanie2.lpr"/>
+        <Caret Line="10" Column="22"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Zadanie2.lpr"/>
+        <Caret Line="43" Column="29"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Zadanie2.lpr"/>
+        <Caret Line="50" Column="19"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Zadanie2.lpr"/>
+        <Caret Line="11" Column="21" TopLine="4"/>
+      </Position5>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
