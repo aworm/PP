@@ -1,0 +1,40 @@
+program petla;
+var
+   rec_i, rec_j : integer;
+begin
+  rec_i := 1;
+  while rec_i <= 10 do
+  begin
+    writeln( 'WHILE: ' , rec_i );
+    rec_i := rec_i + 1;
+  end;
+/////////////////////////////////////
+  for rec_i := 1 to 10 do
+  begin
+    writeln( 'FOR: ' , rec_i );
+  end;
+/////////////////////////////////////
+  rec_i := 1;
+  repeat
+     writeln( 'REPEAT: ' , rec_i );
+     rec_i := rec_i + 1
+  until rec_i > 10;
+
+/////////////////////////////////////
+  rec_i := 1;
+  rec_j := 1;
+
+  while rec_i <= 10 do
+  begin
+    repeat
+      write(rec_i*rec_j:4);
+      rec_j := rec_j + 1;
+    until rec_j > 10;
+    rec_j := 1;
+    writeln();
+    rec_i := rec_i + 1;
+  end;
+
+  readln;
+end.
+

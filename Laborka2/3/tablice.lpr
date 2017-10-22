@@ -1,0 +1,5 @@
+program tablice;
+
+begin
+end.
+

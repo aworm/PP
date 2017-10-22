@@ -25,7 +25,7 @@ begin
     wynik := 0;
     for rec_i := 2 to ilosc do
     begin
-    wynik := wynik + StrToInt(ParamStr(rec_i));
+      wynik := wynik + StrToInt(ParamStr(rec_i));
     end;
     writeln('Suma parametrow wynosi ' , wynik);
   end else

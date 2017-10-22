@@ -1,3 +1,6 @@
+(*
+Aplikacja wypisująca, zależnie od pierwszego parametru, sumę bądź iloczyn wpisanych parametrów wywolania
+*)
 program Zadanie1;
 uses
   SysUtils;
