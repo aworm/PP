@@ -1,23 +1,20 @@
 unit macierze;
 interface
 const
-  n = 2;
-  losowosc = 10;
-
+  n = 3;
+  losowosc = 20;
 type
   kwadrat = Array [0..n,0..n] of Integer;
-
 
 procedure wypelnij( var tab:kwadrat );
 procedure wyswietl( const tab:kwadrat );
 function wyznacznik( tab:kwadrat ):Integer;
 
-
 implementation
 function wyznacznik( tab:kwadrat ):Integer;
 var
-  rec_a:Integer;
-  tmp:Integer;
+  rec_a, rec_b, rec_l, rec_w:Integer;
+  tmp, minor, iloczynd, iloczynu:Integer;
 begin
   writeln();
   tmp := 0;
@@ -29,13 +26,47 @@ begin
   begin
     for rec_a := low(tab) to high(tab) do
     begin
-      tmp := tmp + tab[ low(tab) , rec_a ] * tab[ succ(low(tab)) , succ(rec_a) div (n+1) ] * tab[ succ(succ(low(tab))) , succ(succ(rec_a)) div (n+1) ];
+      tmp := tmp + tab[ low(tab) , rec_a ] * tab[ succ(low(tab)) , succ(rec_a) mod (n+1) ] * tab[ succ(succ(low(tab))) , succ(succ(rec_a)) mod (n+1) ];
+      tmp := tmp - tab[ high(tab) , rec_a ] * tab[ pred(high(tab)) , succ(rec_a) mod (n+1) ] * tab[ pred(pred(high(tab))) , succ(succ(rec_a)) mod (n+1) ];
     end;
-    for rec_a := high(tab) downto low(tab) do
+    wyznacznik := tmp;
+  end
+  else if ( high(tab) = 3 ) then
+  begin
+    tmp:=0;
+
+    for rec_a := low(tab) to high(tab) do
     begin
-      tmp := tmp - tab[ low(tab) , rec_a ] * tab[ succ(low(tab)) , pred(rec_a) div (n+1) ] * tab[ succ(succ((low(tab))) , pred(pred(rec_a)) div (n+1) ];
-      //writeln(tmp);
+      rec_l := low(tab);
+      minor := 0;
+
+      while ( ( rec_l <= high(tab) ) and ( rec_a < high(tab) ) ) or ( ( rec_l < high(tab) ) and ( rec_a = high(tab) ) ) do
+      begin
+        if rec_l = rec_a then
+          Inc(rec_l);
+        iloczynd := 1;
+        iloczynu := 1;
+        rec_w := rec_l;
+
+        for rec_b := low(tab) to (high(tab)-1) do
+        begin
+          if ( ( rec_w mod (n+1) ) = rec_a ) then
+            Inc(rec_w);
+          iloczynd := iloczynd * tab[ rec_b , rec_w mod (n+1) ];
+          iloczynu := iloczynu * tab[ ( high(tab) -1 - rec_b ), rec_w mod (n+1) ];
+          Inc(rec_w);
+        end;
+
+        minor := minor + iloczynd - iloczynu;
+        Inc(rec_l);
+      end;
+
+      if ( ( ( rec_a + high(tab) ) mod 2 ) = 1 ) then
+        tmp := tmp - minor * tab[ high(tab) , rec_a ]
+      else
+        tmp := tmp + minor * tab[ high(tab) , rec_a ];
     end;
+
     wyznacznik := tmp;
   end
   else
