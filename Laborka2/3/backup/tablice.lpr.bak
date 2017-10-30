@@ -20,9 +20,9 @@ begin
   //end;
   //writeln();
 
-  for rec_i := low(tablica2) to high(tablica2) do
+  for rec_i := 0 to 9 do
   begin
-    for rec_j := low(tablica2[rec_i]) to high(tablica2[rec_i]) do
+    for rec_j := 0 to 9 do
     begin
       tablica2[rec_i][rec_j] := (rec_i+1)*(rec_j+1);
     end;

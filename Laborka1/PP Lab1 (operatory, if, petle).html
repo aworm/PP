@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+.sc0 {
+	color: #808080;
+}
+.sc1 {
+}
+.sc2 {
+	color: #008000;
+}
+.sc4 {
+	color: #008080;
+}
+.sc7 {
+	color: #FF8000;
+}
+.sc9 {
+	font-weight: bold;
+	color: #0000FF;
+}
+.sc10 {
+	color: #808080;
+}
+.sc13 {
+	font-weight: bold;
+	color: #000080;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; "><span class="sc2">{ Lab1 }</span><span class="sc0">
+
+
+</span><span class="sc4">// Budowa programu w Pascalu:
+</span><span class="sc0">
+</span><span class="sc9">Program</span><span class="sc0"> </span><span class="sc1">nazwa_programu</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Uses</span><span class="sc0"> </span><span class="sc1">moduł</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Var</span><span class="sc0"> </span><span class="sc1">zmienna</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Begin</span><span class="sc0">
+
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc4">// Sekcja Uses daje nam możliwość implementowani modułów, w których mogą znajdować się funkcje, procedury, typy zmiennych itd.(szczegóły na dalszych zajęciach).
+// Sekcja Var  jest to miejsce gdzie deklarujemy zmienne różnego typu np. integer (liczby całkowite), char (typ znakowy), string (ciąg znaków).
+</span><span class="sc0">
+</span><span class="sc4">// Część właściwa programu :
+</span><span class="sc9">Begin</span><span class="sc0">
+
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0">
+</span><span class="sc4">// Między tymi dwoma słowami kluczowymi zawierać się będzie kod wykonywany przez nasz program.
+</span><span class="sc0">
+
+</span><span class="sc2">{ W Pascalu do wprowadzania danych z klawiatury do zmiennych używamy poleceń: }</span><span class="sc0">
+</span><span class="sc1">Readln</span><span class="sc13">(</span><span class="sc1">zmienna</span><span class="sc13">);</span><span class="sc0">
+
+</span><span class="sc2">{ a do wyświetlania danych polecenie: }</span><span class="sc0">
+</span><span class="sc1">Writeln</span><span class="sc13">(</span><span class="sc10">'zawartosc zmiennej to '</span><span class="sc13">,</span><span class="sc1">zmienna</span><span class="sc13">);</span><span class="sc0">
+
+
+
+</span><span class="sc2">{ Przykładowy program proszący o wpisanie imienia i nazwiska a następnie je wyświetlający: }</span><span class="sc0">
+</span><span class="sc9">Program</span><span class="sc0"> </span><span class="sc1">imie</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Var</span><span class="sc0"> </span><span class="sc1">imie_i_nazwisko</span><span class="sc13">:</span><span class="sc9">string</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Begin</span><span class="sc0">
+    </span><span class="sc1">Writeln</span><span class="sc13">(</span><span class="sc10">'wprowadz imie i nazwisko i naciśnij enter '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">Readln</span><span class="sc13">(</span><span class="sc1">imie_i_nazwisko</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">Writeln</span><span class="sc13">(</span><span class="sc10">'wprowadzone imie i nazwisko to: '</span><span class="sc13">,</span><span class="sc1">imie_i_nazwisko</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">Readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0">
+
+
+</span><span class="sc1">Wykonywanie</span><span class="sc0"> </span><span class="sc1">obliczeń</span><span class="sc13">:</span><span class="sc0">
+
+    </span><span class="sc1">A</span><span class="sc13">*</span><span class="sc1">B</span><span class="sc13">-</span><span class="sc1">mnożenie</span><span class="sc0">
+    </span><span class="sc1">A</span><span class="sc13">+</span><span class="sc1">B</span><span class="sc13">-</span><span class="sc1">dodawania</span><span class="sc0">
+    </span><span class="sc1">A</span><span class="sc13">-</span><span class="sc1">B</span><span class="sc13">-</span><span class="sc1">odejmowanie</span><span class="sc0">
+    </span><span class="sc1">A</span><span class="sc13">/</span><span class="sc1">B</span><span class="sc13">-</span><span class="sc1">dzielenie</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">ale</span><span class="sc0"> </span><span class="sc1">tylko</span><span class="sc0"> </span><span class="sc1">dla</span><span class="sc0"> </span><span class="sc1">liczb</span><span class="sc0"> </span><span class="sc1">typu</span><span class="sc0"> </span><span class="sc1">rzeczywistego</span><span class="sc13">)</span><span class="sc0">
+    </span><span class="sc1">A</span><span class="sc0"> </span><span class="sc9">div</span><span class="sc0"> </span><span class="sc1">B</span><span class="sc13">-</span><span class="sc0"> </span><span class="sc1">dzielenie</span><span class="sc0"> 
+
+</span><span class="sc1">Aby</span><span class="sc0"> </span><span class="sc1">nasze</span><span class="sc0"> </span><span class="sc1">obliczenie</span><span class="sc0"> </span><span class="sc1">zostało</span><span class="sc0"> </span><span class="sc1">na</span><span class="sc0"> </span><span class="sc1">dłużej</span><span class="sc0"> </span><span class="sc1">zapamiętane</span><span class="sc0"> </span><span class="sc1">w</span><span class="sc0"> </span><span class="sc1">pamięci</span><span class="sc0"> </span><span class="sc1">programu</span><span class="sc0"> </span><span class="sc1">należy</span><span class="sc0"> </span><span class="sc1">przypisać</span><span class="sc0"> </span><span class="sc1">obliczenie</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0"> </span><span class="sc1">jakiejś</span><span class="sc0"> </span><span class="sc1">zmiennej</span><span class="sc0"> </span><span class="sc1">np</span><span class="sc13">.(</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc1">operator</span><span class="sc0"> </span><span class="sc1">przypisania</span><span class="sc13">)</span><span class="sc0">
+    </span><span class="sc1">A</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc7">12</span><span class="sc13">+</span><span class="sc7">3</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">A</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc1">c</span><span class="sc13">*</span><span class="sc1">b</span><span class="sc13">;</span><span class="sc0">
+
+
+</span><span class="sc2">{ Program liczący pole kwadratu i wyświetlający wynik: }</span><span class="sc0">
+</span><span class="sc9">Program</span><span class="sc0"> </span><span class="sc1">pole</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Var</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">,</span><span class="sc1">pole</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Begin</span><span class="sc0">
+    </span><span class="sc1">Writeln</span><span class="sc13">(</span><span class="sc10">'Wprowadz długość boku kwadratu i naciśnij enter'</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">Readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">Pole</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">*</span><span class="sc1">a</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">Writeln</span><span class="sc13">(</span><span class="sc10">'pole kwadratu o boku '</span><span class="sc13">,</span><span class="sc1">a</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc10">' wynosi: '</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">pole</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">Readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0">
+
+
+
+</span><span class="sc1">Warunek</span><span class="sc0"> </span><span class="sc9">IF</span><span class="sc0"> </span><span class="sc1">w</span><span class="sc0"> </span><span class="sc1">Pascalu</span><span class="sc0">
+</span><span class="sc1">Operatory</span><span class="sc0"> </span><span class="sc1">logiczne</span><span class="sc0">
+</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc13">&gt;</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc0">   </span><span class="sc13">-</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc1">większe</span><span class="sc0"> </span><span class="sc1">od</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc0">
+</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc13">&lt;</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc0">   </span><span class="sc13">-</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc1">mniejsze</span><span class="sc0"> </span><span class="sc1">od</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc0">
+</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc13">&gt;=</span><span class="sc0"> </span><span class="sc7">1</span><span class="sc0">  </span><span class="sc13">-</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc1">większe</span><span class="sc0"> </span><span class="sc1">lub</span><span class="sc0"> </span><span class="sc1">równe</span><span class="sc0"> </span><span class="sc7">1</span><span class="sc0">
+</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc13">&lt;=</span><span class="sc0"> </span><span class="sc7">10</span><span class="sc0"> </span><span class="sc13">-</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc1">mniejsze</span><span class="sc0"> </span><span class="sc1">lub</span><span class="sc0"> </span><span class="sc1">równe</span><span class="sc0"> </span><span class="sc7">10</span><span class="sc0">
+</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc13">&lt;&gt;</span><span class="sc0"> </span><span class="sc7">1</span><span class="sc0">  </span><span class="sc13">-</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc1">różne</span><span class="sc0"> </span><span class="sc1">od</span><span class="sc0"> </span><span class="sc7">1</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">większe</span><span class="sc0"> </span><span class="sc1">lub</span><span class="sc0"> </span><span class="sc1">mniejsze</span><span class="sc13">)</span><span class="sc0">
+</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc13">=</span><span class="sc0"> </span><span class="sc7">1</span><span class="sc0">   </span><span class="sc13">-</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc1">równe</span><span class="sc0"> </span><span class="sc7">1</span><span class="sc0">
+
+</span><span class="sc1">Dlatego</span><span class="sc0"> </span><span class="sc1">też</span><span class="sc0"> </span><span class="sc1">gdy</span><span class="sc0"> </span><span class="sc1">przypisujemy</span><span class="sc0"> </span><span class="sc1">wartość</span><span class="sc0"> </span><span class="sc1">zmiennej</span><span class="sc0"> </span><span class="sc1">w</span><span class="sc0"> </span><span class="sc1">Pascalu</span><span class="sc0"> </span><span class="sc1">piszemy</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc1">nie</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">=</span><span class="sc7">1</span><span class="sc0"> !
+
+</span><span class="sc1">Przypisanie</span><span class="sc0"> </span><span class="sc1">wartości</span><span class="sc0"> </span><span class="sc1">zmiennej</span><span class="sc0"> 
+</span><span class="sc1">dobrze</span><span class="sc0">  </span><span class="sc1">a</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0">
+</span><span class="sc1">źle</span><span class="sc0">     </span><span class="sc1">a</span><span class="sc13">=</span><span class="sc7">1</span><span class="sc0">
+
+</span><span class="sc1">Operator</span><span class="sc0"> </span><span class="sc1">logiczny</span><span class="sc0">
+</span><span class="sc1">dobrze</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">=</span><span class="sc7">1</span><span class="sc0">
+</span><span class="sc1">źle</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0">
+
+</span><span class="sc2">{ Instrukcja warunkowa If }</span><span class="sc0">
+</span><span class="sc9">If</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">warunek</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0"> 
+    </span><span class="sc1">instrukcja1</span><span class="sc0">
+</span><span class="sc9">Else</span><span class="sc0">
+    </span><span class="sc1">instrukcja2</span><span class="sc13">;</span><span class="sc0">
+
+</span><span class="sc2">{ Przykładowy program, w którym po wprowadzeniu jedynki wyświetli się napis „gratuluje” a po wpisaniu jakiejkolwiek innej liczby wyskoczy napis „nie postarałeś się”. }</span><span class="sc0">
+</span><span class="sc9">Program</span><span class="sc0"> </span><span class="sc1">warunek</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Var</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Begin</span><span class="sc0">
+    </span><span class="sc1">Readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">If</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0"> </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'gratuluje'</span><span class="sc13">)</span><span class="sc0">
+    </span><span class="sc9">Else</span><span class="sc0">        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'nie postarales sie'</span><span class="sc13">);</span><span class="sc0">
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc2">{ Pętle }</span><span class="sc0">
+</span><span class="sc2">{ Pętla Repeat Until(warunek)  wykonuje instrukcje znajdujące się między  repeat until dopóki warunek nie zostanie spełniony. }</span><span class="sc0">
+</span><span class="sc9">Repeat</span><span class="sc0"> 
+    </span><span class="sc1">Instrukcja1</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">Instrukcja2</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Until</span><span class="sc13">(</span><span class="sc1">warunek_konca</span><span class="sc13">);</span><span class="sc0">
+
+</span><span class="sc2">{ Np. Program proszący o wpisanie liczby dopóki użytkownik nie wpisze 1. }</span><span class="sc0">
+
+</span><span class="sc9">Program</span><span class="sc0"> </span><span class="sc1">petla1</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Var</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Begin</span><span class="sc0">
+</span><span class="sc1">a</span><span class="sc13">:=</span><span class="sc7">0</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Repeat</span><span class="sc0">
+</span><span class="sc1">Writeln</span><span class="sc13">(</span><span class="sc10">'Wprowadz liczbe 1'</span><span class="sc13">);</span><span class="sc0">
+</span><span class="sc1">Readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+
+</span><span class="sc9">Until</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">=</span><span class="sc7">1</span><span class="sc13">);</span><span class="sc0">
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0">
+
+
+</span><span class="sc2">{ Pętla while(warunek) do instrukcja; wykonuje się, gdy warunek jest spełniony.
+  Np. Program, który prosi o wpisanie liczby dopóki nie zostanie wpisana liczba większa niż 10. }</span><span class="sc0">
+</span><span class="sc9">Program</span><span class="sc0"> </span><span class="sc1">petla2</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Var</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Begin</span><span class="sc0">
+    </span><span class="sc1">a</span><span class="sc13">:=</span><span class="sc7">0</span><span class="sc13">;</span><span class="sc0">
+    
+    </span><span class="sc9">while</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">&lt;=</span><span class="sc7">10</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc1">Writeln</span><span class="sc13">(</span><span class="sc10">'wprowadz liczbe wieksza niż 10'</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc1">Readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0">
+
+
+
+
+</span><span class="sc2">{ Pętla for i:=1 to 10 do instrukcja; pętla, w której po poleceniu for przypisujemy jakiejś zmiennej początkową wartość, która następnie będzie zwiększana o 1 dopóki nie osiągnie podanej przez nas wartości (np. 10).
+  Np. Program, który wypisuje 10 razy napis „ucz się pilnie Pascala”. }</span><span class="sc0">
+</span><span class="sc9">Program</span><span class="sc0"> </span><span class="sc1">petla3</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Var</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">Begin</span><span class="sc0">
+
+    </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc7">10</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0"> </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'ucz się pilnie Pascala'</span><span class="sc13">);</span><span class="sc0">
+
+</span><span class="sc9">End</span><span class="sc13">.</span><span class="sc0"> 
+
+
+
+</span><span class="sc1">Przykładowe</span><span class="sc0"> </span><span class="sc1">programy</span><span class="sc0"> </span><span class="sc1">z</span><span class="sc0"> </span><span class="sc1">wykorzystaniem</span><span class="sc0"> </span><span class="sc1">pętli</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc0"> </span><span class="sc1">instrukcji</span><span class="sc0"> </span><span class="sc1">warunkowej</span><span class="sc13">:</span><span class="sc0">
+
+</span><span class="sc2">{ 1.    Dodawanie do zmiennej liczby i = 1 aż do osiągnięcia wartości i = 20. }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">petla1</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc7">10</span><span class="sc13">;</span><span class="sc0"> 
+    
+    </span><span class="sc9">repeat</span><span class="sc0">
+        </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc1">i</span><span class="sc13">+</span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wynik: '</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">until</span><span class="sc13">(</span><span class="sc1">i</span><span class="sc13">=</span><span class="sc7">20</span><span class="sc13">);</span><span class="sc0"> 
+    
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">  
+               
+</span><span class="sc2">{ 2. Dodaje do wprowadzonej liczby 2 aż do osiągnięcia wartości o 30 większej od wartości początkowej. }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0">  </span><span class="sc1">petla2</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">Write</span><span class="sc13">(</span><span class="sc10">'Wprowadz liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">ReadLn</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">i</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">;</span><span class="sc0">  
+    </span><span class="sc9">repeat</span><span class="sc0">
+        </span><span class="sc1">a</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc13">+</span><span class="sc7">2</span><span class="sc13">;</span><span class="sc0"> 
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">until</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">=</span><span class="sc1">i</span><span class="sc13">+</span><span class="sc7">30</span><span class="sc13">);</span><span class="sc0"> 
+    </span><span class="sc1">ReadLn</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc2">{ 3. Wyświetla liczby z przedziału a do 50. }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">petla3</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> 
+    </span><span class="sc1">a</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc0">  </span><span class="sc1">Integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wpisz liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    
+    </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc7">50</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'liczba: '</span><span class="sc13">,</span><span class="sc1">i</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+
+
+
+</span><span class="sc2">{ 4. Wyświetla liczby od z zakresu wprowadzonego przez użytkownika }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">petla4</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc0"> </span><span class="sc1">Integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wpisz pierwsza liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wpisz druga liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">b</span><span class="sc13">);</span><span class="sc0">
+
+    </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'liczba: '</span><span class="sc13">,</span><span class="sc1">i</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc2">{ 5.Zadanie 4 zamienione na pętle While Do }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">petla5</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wpisz pierwsza liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wpisz druga liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">b</span><span class="sc13">);</span><span class="sc0">
+    
+    </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">while</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">i</span><span class="sc0"> </span><span class="sc13">&lt;=</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'liczba: '</span><span class="sc13">,</span><span class="sc1">i</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc1">i</span><span class="sc13">+</span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc2">{ 6. Suma 5 kolejnych liczb całkowitych }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">petla5</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">suma</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">suma</span><span class="sc13">:=</span><span class="sc7">0</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc7">5</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc1">suma</span><span class="sc13">:=</span><span class="sc1">suma</span><span class="sc13">+</span><span class="sc1">i</span><span class="sc13">;</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'liczba: '</span><span class="sc13">,</span><span class="sc1">suma</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc2">{ 7. Zmiana pętli for na pętlę Repeat (suma 5 kolejnych liczb) }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">z_for_na_repeat</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">suma</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">suma</span><span class="sc13">:=</span><span class="sc7">0</span><span class="sc13">;</span><span class="sc0">
+
+    </span><span class="sc9">repeat</span><span class="sc0">
+        </span><span class="sc1">suma</span><span class="sc13">:=</span><span class="sc1">suma</span><span class="sc13">+</span><span class="sc1">i</span><span class="sc13">;</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc1">suma</span><span class="sc13">);</span><span class="sc0"> 
+        </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc1">i</span><span class="sc13">+</span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">    
+    </span><span class="sc9">until</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">i</span><span class="sc13">=</span><span class="sc7">5</span><span class="sc13">);</span><span class="sc0">
+
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+
+</span><span class="sc2">{ 8.Obliczanie minimum i maksimum za pomocą pętli for }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0">  </span><span class="sc1">min_i_max</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">min</span><span class="sc13">,</span><span class="sc1">max</span><span class="sc13">,</span><span class="sc1">i</span><span class="sc13">,</span><span class="sc1">a</span><span class="sc13">:</span><span class="sc0"> </span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">min</span><span class="sc13">:=</span><span class="sc7">0</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">max</span><span class="sc13">:=</span><span class="sc7">0</span><span class="sc13">;</span><span class="sc0">
+
+    </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc7">6</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wprowadz liczbe: '</span><span class="sc13">,</span><span class="sc1">i</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">i</span><span class="sc13">=</span><span class="sc7">1</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0">
+        </span><span class="sc9">begin</span><span class="sc0">
+            </span><span class="sc1">min</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc13">;</span><span class="sc0">
+            </span><span class="sc1">max</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc13">;</span><span class="sc0">
+        </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">&gt;</span><span class="sc1">max</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0"> </span><span class="sc1">max</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc13">;</span><span class="sc0">
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">&lt;</span><span class="sc1">min</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0"> </span><span class="sc1">min</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'maksymalna liczba to: '</span><span class="sc13">,</span><span class="sc1">max</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'minimalna liczba to: '</span><span class="sc13">,</span><span class="sc1">min</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc2">{ 9. Liczby podzielne przez 3 w przedziale od 1 do 100. }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">liczby_podzielna_przez_3</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0">  </span><span class="sc1">i</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc7">100</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">i</span><span class="sc0"> </span><span class="sc9">mod</span><span class="sc0"> </span><span class="sc7">3</span><span class="sc13">=</span><span class="sc7">0</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0"> </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc1">i</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">  
+
+</span><span class="sc2">{ 10.NWW z 2 liczb wprowadzonych przez użytkownika }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0">   </span><span class="sc1">NWW_z_2_liczb</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0">  </span><span class="sc1">a</span><span class="sc13">,</span><span class="sc1">b</span><span class="sc13">,</span><span class="sc1">nwd</span><span class="sc13">,</span><span class="sc1">i</span><span class="sc13">,</span><span class="sc1">z</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+     </span><span class="sc1">nww</span><span class="sc13">:</span><span class="sc0"> </span><span class="sc1">real</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">write</span><span class="sc13">(</span><span class="sc10">'wprowadz liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">write</span><span class="sc13">(</span><span class="sc10">'wprowadz liczbe: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">b</span><span class="sc13">);</span><span class="sc0">
+    
+    </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">&gt;</span><span class="sc1">b</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0"> </span><span class="sc1">z</span><span class="sc13">:=</span><span class="sc1">a</span><span class="sc0">
+    </span><span class="sc9">else</span><span class="sc0">          </span><span class="sc1">z</span><span class="sc13">:=</span><span class="sc1">b</span><span class="sc13">;</span><span class="sc0">
+    
+    </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">while</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">&lt;=</span><span class="sc1">z</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">a</span><span class="sc0"> </span><span class="sc9">mod</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">=</span><span class="sc7">0</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0">
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc13">(</span><span class="sc1">b</span><span class="sc0"> </span><span class="sc9">mod</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">=</span><span class="sc7">0</span><span class="sc13">)</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0"> </span><span class="sc1">nwd</span><span class="sc13">:=</span><span class="sc1">i</span><span class="sc13">;</span><span class="sc0">
+        </span><span class="sc1">i</span><span class="sc13">:=</span><span class="sc1">i</span><span class="sc13">+</span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'NWD: '</span><span class="sc13">,</span><span class="sc1">nwd</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">nww</span><span class="sc13">:=(</span><span class="sc1">a</span><span class="sc13">*</span><span class="sc1">b</span><span class="sc13">)/</span><span class="sc1">nwd</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'NWW: '</span><span class="sc13">,</span><span class="sc1">nww</span><span class="sc13">:</span><span class="sc7">2</span><span class="sc13">:</span><span class="sc7">0</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+ </span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+
+</span><span class="sc2">{ 11. Choinka }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0">   </span><span class="sc1">choinka</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0">  </span><span class="sc1">i</span><span class="sc13">,</span><span class="sc1">z</span><span class="sc13">,</span><span class="sc1">g</span><span class="sc13">:</span><span class="sc1">integer</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">write</span><span class="sc13">(</span><span class="sc10">'podaj wielkosc choinki: '</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">g</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">i</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">while</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">&lt;=</span><span class="sc1">g</span><span class="sc0"> </span><span class="sc9">Do</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">z</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc1">g</span><span class="sc13">-</span><span class="sc1">i</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0"> </span><span class="sc1">write</span><span class="sc13">(</span><span class="sc10">' '</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc4">//parzysta liczba gwiazdek:
+</span><span class="sc0">        </span><span class="sc9">for</span><span class="sc0"> </span><span class="sc1">z</span><span class="sc13">:=</span><span class="sc7">1</span><span class="sc0"> </span><span class="sc9">to</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">*</span><span class="sc7">2</span><span class="sc0"> </span><span class="sc9">do</span><span class="sc0"> </span><span class="sc1">write</span><span class="sc13">(</span><span class="sc10">'*'</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">();</span><span class="sc0">
+        </span><span class="sc1">i</span><span class="sc0"> </span><span class="sc13">:=</span><span class="sc0"> </span><span class="sc1">i</span><span class="sc13">+</span><span class="sc7">1</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+ </span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+
+</span><span class="sc2">{ 12.Delta }</span><span class="sc0">
+</span><span class="sc9">program</span><span class="sc0"> </span><span class="sc1">funkcja</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">var</span><span class="sc0"> </span><span class="sc1">delta</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">x1</span><span class="sc0"> </span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">x2</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">b</span><span class="sc13">,</span><span class="sc0"> </span><span class="sc1">c</span><span class="sc13">:</span><span class="sc0"> </span><span class="sc1">real</span><span class="sc13">;</span><span class="sc0">
+</span><span class="sc9">begin</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wprowadz wspolczynnik a'</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wprowadz wspolczynnik b'</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">b</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'wprowadz wspolczynnik c'</span><span class="sc13">);</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">(</span><span class="sc1">c</span><span class="sc13">);</span><span class="sc0">
+
+    </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc1">a</span><span class="sc13">=</span><span class="sc7">0</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'TO NIE JEST FUNKCJA KWADRATOWA'</span><span class="sc13">)</span><span class="sc0">
+    </span><span class="sc9">else</span><span class="sc0">
+    </span><span class="sc9">begin</span><span class="sc0">
+        </span><span class="sc1">delta</span><span class="sc13">:=(</span><span class="sc1">b</span><span class="sc13">*</span><span class="sc1">b</span><span class="sc13">)-(</span><span class="sc7">4</span><span class="sc13">*</span><span class="sc1">a</span><span class="sc13">*</span><span class="sc1">c</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'Delta = '</span><span class="sc13">,</span><span class="sc1">delta</span><span class="sc13">);</span><span class="sc0">
+
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc1">delta</span><span class="sc13">&lt;</span><span class="sc7">0</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0">
+            </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'Brak miejsc zerowych (w zbiorze liczb rzeczywistych)'</span><span class="sc13">)</span><span class="sc0">
+        </span><span class="sc9">else</span><span class="sc0">
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc1">delta</span><span class="sc13">&gt;</span><span class="sc7">0</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0">
+        </span><span class="sc9">begin</span><span class="sc0">
+            </span><span class="sc1">x1</span><span class="sc13">:=((-</span><span class="sc1">b</span><span class="sc13">)-</span><span class="sc1">sqrt</span><span class="sc13">(</span><span class="sc1">delta</span><span class="sc13">))/(</span><span class="sc7">2</span><span class="sc13">*</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+            </span><span class="sc1">x2</span><span class="sc13">:=((-</span><span class="sc1">b</span><span class="sc13">)+</span><span class="sc1">sqrt</span><span class="sc13">(</span><span class="sc1">delta</span><span class="sc13">))/(</span><span class="sc7">2</span><span class="sc13">*</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+            </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'x1= '</span><span class="sc13">,</span><span class="sc1">x1</span><span class="sc13">);</span><span class="sc0">
+            </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'x2= '</span><span class="sc13">,</span><span class="sc1">x2</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc9">end</span><span class="sc0">
+        </span><span class="sc9">else</span><span class="sc0">
+        </span><span class="sc9">if</span><span class="sc0"> </span><span class="sc1">delta</span><span class="sc13">=</span><span class="sc7">0</span><span class="sc0"> </span><span class="sc9">then</span><span class="sc0">
+        </span><span class="sc9">begin</span><span class="sc0">
+            </span><span class="sc1">x1</span><span class="sc13">:=(-</span><span class="sc1">b</span><span class="sc13">)/(</span><span class="sc7">2</span><span class="sc13">*</span><span class="sc1">a</span><span class="sc13">);</span><span class="sc0">
+            </span><span class="sc1">writeln</span><span class="sc13">(</span><span class="sc10">'x1 = '</span><span class="sc13">,</span><span class="sc1">x1</span><span class="sc13">);</span><span class="sc0">
+        </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc9">end</span><span class="sc13">;</span><span class="sc0">
+    </span><span class="sc1">readln</span><span class="sc13">();</span><span class="sc0">
+</span><span class="sc9">end</span><span class="sc13">.</span><span class="sc0">
+</span></div></body>
+</html>

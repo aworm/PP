@@ -1,0 +1,25 @@
+program Zadanie3;
+{
+Procedura która uzupelni nam macierz N x N
+Funkcja wyliczajaca wyznacznik macierzy dla N = 3 lub N = 4
+}
+
+uses macierze;
+
+var
+  tablica : kwadrat;
+begin
+  Randomize();
+
+  //wypelnij(tablica);
+  //wyswietl(tablica);
+
+  //writeln('Wyznacznik wynosi: ' , wyznacznik(tablica):3);
+  //writeln(tablica[n,n], tablica[succ(3),succ(3)]);
+
+  writeln(5 mod 9);
+  writeln(9 mod 5);
+  readln();
+
+end.
+

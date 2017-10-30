@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="funkcje.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="22" Y="13"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="funk.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="53"/>
+        <CursorPos X="47" Y="81"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="60"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="27" HistoryIndex="26">
+      <Position1>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="5" Column="3"/>
+      </Position1>
+      <Position2>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="8" Column="7"/>
+      </Position2>
+      <Position3>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="10" Column="24"/>
+      </Position3>
+      <Position4>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="4" Column="5"/>
+      </Position4>
+      <Position5>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="6"/>
+      </Position5>
+      <Position6>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="5" Column="3"/>
+      </Position6>
+      <Position7>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="6" Column="12"/>
+      </Position7>
+      <Position8>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="5" Column="3"/>
+      </Position8>
+      <Position9>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="4" Column="6"/>
+      </Position9>
+      <Position10>
+        <Filename Value="funk.pas"/>
+        <Caret Line="5" Column="17"/>
+      </Position10>
+      <Position11>
+        <Filename Value="funk.pas"/>
+        <Caret Line="6"/>
+      </Position11>
+      <Position12>
+        <Filename Value="funk.pas"/>
+        <Caret Line="2" Column="12"/>
+      </Position12>
+      <Position13>
+        <Filename Value="funk.pas"/>
+        <Caret Line="8" Column="13"/>
+      </Position13>
+      <Position14>
+        <Filename Value="funk.pas"/>
+        <Caret Line="5"/>
+      </Position14>
+      <Position15>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="4" Column="15"/>
+      </Position15>
+      <Position16>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="12" Column="28"/>
+      </Position16>
+      <Position17>
+        <Filename Value="funk.pas"/>
+        <Caret Line="9"/>
+      </Position17>
+      <Position18>
+        <Filename Value="funk.pas"/>
+        <Caret Line="3" Column="14"/>
+      </Position18>
+      <Position19>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="4" Column="9"/>
+      </Position19>
+      <Position20>
+        <Filename Value="funk.pas"/>
+        <Caret Line="59" Column="26" TopLine="11"/>
+      </Position20>
+      <Position21>
+        <Filename Value="funk.pas"/>
+        <Caret Line="40" Column="15" TopLine="14"/>
+      </Position21>
+      <Position22>
+        <Filename Value="funk.pas"/>
+        <Caret Line="53" Column="56" TopLine="14"/>
+      </Position22>
+      <Position23>
+        <Filename Value="funk.pas"/>
+        <Caret Line="50" Column="12" TopLine="14"/>
+      </Position23>
+      <Position24>
+        <Filename Value="funk.pas"/>
+        <Caret Line="53" Column="49" TopLine="30"/>
+      </Position24>
+      <Position25>
+        <Filename Value="funk.pas"/>
+        <Caret Line="35" Column="10"/>
+      </Position25>
+      <Position26>
+        <Filename Value="funkcje.lpr"/>
+        <Caret Line="15" Column="45"/>
+      </Position26>
+      <Position27>
+        <Filename Value="funk.pas"/>
+        <Caret Line="72" Column="16" TopLine="51"/>
+      </Position27>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

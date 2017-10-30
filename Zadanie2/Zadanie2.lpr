@@ -1,11 +1,11 @@
 program Zadanie2;
 (*
 Stworzyć dwie tablice dwówymiarowe tab1 i tab2
-Prosimy o uzupelnienie danymi użytkownika             'dev on board'
+Prosimy o uzupelnienie danymi użytkownika
 Przemnozyc macierze a wynik zapisac w pliku
 *)
 var
-  tab1,tab2 : Array [0..10,0..10] of Integer;
+  tab1,tab2 : Array [0..9,0..9] of Integer;
   plik : Text;
   rec_i, rec_j, rec_k : integer;
   iloczyn : integer;
@@ -23,21 +23,6 @@ begin
     end;
   end;
 
-  //for rec_i := low(tab1) to high(tab1) do
-  //begin
-  //  for rec_j := low(tab1[rec_i]) to high(tab1[rec_i]) do
-  //  begin
-  //    write( plik, tab1[rec_i, rec_j]:3 );
-  //  end;
-  //  write(plik, char(9));
-  //  for rec_j := low(tab2[rec_i]) to high(tab2[rec_i]) do
-  //  begin
-  //    write( plik, tab2[rec_i, rec_j]:3 );
-  //  end;
-  //  writeln(plik);
-  //end;
-  //writeln(plik);
-
   for rec_i := low(tab1) to high(tab1) do
   begin
     for rec_j := low(tab1[rec_i]) to high(tab1[rec_i]) do
@@ -53,6 +38,6 @@ begin
   end;
 
   close(plik);
-  //readln();
+
 end.
 

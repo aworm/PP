@@ -1,0 +1,437 @@
+Tablice
+Jednowymiarowe - używane głównie wtedy, gdy potrzebujemy więcej niż jedna zmienną tego samego typu. Deklaracja tablicy:
+Var
+tablica: array [0..9] of integer;
+Jest to deklaracja tablicy 10 elementowej typu integer. 
+Odwołanie się do tablicy w programie:
+Tablica[8]:=5;
+Tablica[indeks]:=6;
+Tablica[i-1]:=’Adrian’;
+Wszędzie gdzie chcemy się odwołać do danego elementu tablicy musimy napisać nazwę tablicy a następnie w nawiasie kwadratowym numer elementu w tablicy (indeks).
+Przykładowy program wykorzystujący tablice jednowymiarową.
+Program prosi użytkownika o wpisanie 10 liczb, następnie je sumuje a potem wyświetla wszystkie elementy tablicy.
+
+Program suma_tab;
+Var       tab:array[0..9] of integer;
+	i, suma:integer;
+Begin
+       For i:=1 to 10 do readln(tab[i-1]);
+            Suma:=0;
+       For i:=1 to 10 do suma:=suma+tab[i-1];
+           Writeln(suma);
+       For i:=1 to 10 do writeln(i, ' Element tablicy to: ' ,tab[i-1]);
+End.
+Tablice dwuwymiarowe
+deklaracja: tab:array [0..9, 0..3] of string;
+
+Takie tablice są wykorzystywane głównie jako tabelki które mają określoną liczbę wierszy 0..9 oraz liczbę kolumn 0..3.
+Odwołanie do takiej tablicy w programie:
+Tab[0][0]:= 'Klaudia';
+tab[0][1]:= 'Kowalska';
+tab[0][3]:= 'Gliwice';
+Tab[5][0]:= 'Grzegorz';
+Przykładowy program z użyciem tablicy dwuwymiarowej:
+Program tab_2_wym;
+Var tab:array [0..2, 0..2] of string;
+Begin
+For i:=1 to 3 do 
+		For j:=1 to 3 do
+Begin
+writeln('wprowadz: numer z dziennika, nazwisko, imie');
+readln(tab[i-1][j-1]);		
+			               End;
+End.
+Tablice mogą posiadać wiele wymiarów.
+np. tablica 4 wymiarowa tab:array[0..2, 0..4, 0..7, 0..6] of integer;
+Pliki
+Podstawowe polecenia operujące na plikach:
+assign(zmienna_plikowa, nazwa_pliku)-skojarza zmienna_plikowa z plikiem
+rewrite(zmienna_plikowa)- tworzy nowy plik o nazwie podanej w assign lub czyści już istniejący plik o tej nazwie
+reset(zmienna_plikowa)-otwiera plik i ustawia się na początku pliku
+append(zmienna_plikowa)-otwiera plik i ustawia się na końcu zawartości, używany głównie przy dopisywaniu danych do pliku
+close(zmienna_plikowa)-zamyka plik i nie można już na nim wykonywać operacji
+write(zmienna_plikowa, a)- zapisuje do pliku zawartość zmiennej a
+read(zmienna_plikowa,b)- wczytuje z pliku dane do zmiennej b
+Zmienna Plikowa musy być zadeklarowana w sekcji var następująco:
+Zmienna_plikowa:text;//dla plików tekstowych
+zmienna_plikowa:file of byte// dla innych typów  rodzaj typu musimy poprzedzić słowami file of 
+Przykładowe zadanie na plikach:
+program project1;
+
+uses Crt;
+var plik1:text;
+imieinazwisko,a:string;
+
+begin
+
+assign(plik1, 'Imie i nazwisko.txt'); 
+rewrite(plik1); 
+writeln('wprowadz imie i nazwisko:');
+readln(a);
+writeln(plik1,a); //zapisuje do pliku wprowadzony tekst
+reset(plik1);
+readln(plik1,imieinazwisko); 
+ClrScr; //czysci ekran
+writeln('wprowadzone imie i nazwisko to:',imieinazwisko);
+
+close(plik1); 
+readln();
+end.                        
+
+Kilka przykładowych zadań na plikach i tablicach.
+1. Program pobiera od użytkownika 20 liczb, wyświetla je, sumuje, wyświetla sumę.
+
+program pierwszy;
+var a, suma:integer;
+      b: array [0..19] of integer;
+
+begin
+
+  For a:=1 to 20 do
+     begin
+       writeln('wprowadz liczbe', a);
+       readln(b[a-1]);
+     end;
+   writeln('wprowadzone liczby: ');
+   writeln();
+
+   for a:=1 to 20 do
+      begin
+         writeln(b[a-1]);
+      end;
+
+  writeln();
+  for a:=1 to 20 do
+     begin
+      suma:=suma+b[a-1];
+     end;
+  writeln('suma: ', suma);
+readln();
+end.
+
+2. Program pobiera 15 liczb, wyświetla je oraz znajduje min i max
+
+program drugi;
+var a, min, max:integer;
+      b: array [0..14] of integer;
+
+begin
+
+  For a:=1 to 15 do
+     begin
+       writeln('wprowadz liczbe', a);
+       readln(b[a-1]);
+     end;
+
+   writeln('wprowadzone liczby: ');
+   writeln();
+
+   for a:=1 to 15 do
+      begin
+         writeln(b[a-1]);
+      end;
+
+  writeln();
+
+  min:=0;
+  max:=0;
+  a:=1; 
+
+  repeat
+
+    if a=1 then 
+    begin
+      min:=b[0];
+      max:=b[0];
+    end;
+
+    if b[a-1]>max then max:=b[a-1];
+    if b[a-1]<min then min:=b[a-1];
+
+    a:=a+1;
+
+  until (a=15);
+
+  writeln('maksymalna liczba to: ',max);
+  writeln('minimalna liczba to: ',min);
+
+readln();
+end.
+
+
+
+
+3. Program pobiera imię i nazwisko 5 razy, w osobnych liniach wyświetla je, tablica dwuwymiarowa
+    
+program trzeci;
+
+var  a, i: integer;
+     tab: array [0..5,0..1] of string;
+
+begin
+
+      tab[0][0]:='imie';
+      tab[0][1]:='nazwisko';
+
+      For a:=1 to 5 do
+      begin
+        for i:=0 to 1 do
+                    begin
+                    if i=0 then writeln('wprowadz imie ',a);
+                    if i=1 then writeln('wprowadz nazwisko ',a);
+                    readln(tab[a][i]);
+
+                    end;
+      end;
+
+       Writeln();
+       Writeln();
+       Writeln();
+
+       For a:=0 to 5 do
+      begin
+        for i:=0 to 1 do
+                    begin
+                    if i=0 then write(tab[a][i], '  ');
+                    if i=1 then writeln(tab[a][i]);
+
+                    end;
+                    Writeln();
+
+      end;
+
+  readln();
+  end.    
+
+
+
+
+
+
+
+4. Wprowadzić i wyświetlić tablica dwuwymiarowa: imiona, nazwiska, miejscowości, kody pocztowe  5 razy.
+
+program czwarty;
+
+var  a, i: integer;
+     tab: array [0..5,0..3] of string;
+
+begin
+
+      tab[0][0]:='imie';
+      tab[0][1]:='nazwisko';
+      tab[0][2]:='miejscowosc';
+      tab[0][3]:='kod pocztowy';
+
+      For a:=1 to 5 do
+      begin
+        for i:=0 to 3 do
+                    begin
+                    if i=0 then writeln('wprowadz imie ',a);
+                    if i=1 then writeln('wprowadz nazwisko ',a);
+                    if i=2 then writeln('wprowadz miejscowosc ',a);
+                    if i=3 then writeln('wprowadz kod pocztowy ',a);
+
+                    readln(tab[a][i]);
+
+                    end;
+      end;
+
+       Writeln();
+       Writeln();
+       Writeln();
+
+       For a:=0 to 5 do
+      begin
+        for i:=0 to 3 do
+                    begin
+                    if i=0 then write(tab[a][i], '  ');
+                    if i=1 then write(tab[a][i], ' ');
+                    if i=2 then write(tab[a][i], '  ');
+                    if i=3 then write(tab[a][i]);
+
+                    end;
+                    Writeln();
+
+      end;
+
+  readln();
+  end.                       
+
+
+5. Pobrać od użytkownika pięć imion i nazwisk, zapisać do pliku, a następnie otworzyć plik i wyświetlić te imiona i nazwiska.
+ 
+program piaty;
+
+uses
+Crt;
+var plik1:text;
+a:string;
+imieinazwisko:array [0..4] of string;
+i:integer;
+
+begin
+
+assign(plik1, 'Imie i nazwisko.txt');
+rewrite(plik1); 
+
+for i:=1 to 5 do begin
+writeln('wprowadz imie i nazwisko ',i,' :');
+readln(a);
+writeln(plik1,a); 
+
+end;
+
+reset(plik1);//nie moze byc w petli bo by pokazywalo tylko pierwsza linijke bo ustawia na początku //plik
+ClrScr;
+for i:=1 to 5 do
+ begin
+readln(plik1,imieinazwisko[i-1]);
+writeln('wprowadzone imie i nazwisko to:',imieinazwisko[i-1]);
+end;
+
+close(plik1); 
+readln();
+end.
+
+
+
+
+
+
+
+6. Wprowadzić 20 elementów liczbowych do tablicy, zapisać do pliku, a następnie wczytać te liczby z pliku do drugiej tablicy i wyświetlić na ekran.
+
+
+program szosty;
+
+uses
+Crt;
+type tab=array [0..19] of byte;
+var
+plik2: file of byte;
+a:integer;
+b, tablica: tab;
+
+begin
+
+  assign(plik2, 'liczby.dat');    //dat bo robimy na liczbach
+  rewrite(plik2);
+  a:=1;
+  repeat
+     begin
+     randomize;
+     writeln('wprowadz liczbe', a);
+     b[a-1]:=random(19);
+     a:=a+1;
+     end;
+   until a=21;
+   writeln('wprowadzone liczby: ');
+   writeln();
+
+   a:=1;
+   repeat
+      begin
+         writeln(b[a-1]);
+         write(plik2,b[a-1]); 
+         a:=a+1;
+      end;
+   until a=21;
+  writeln();
+
+reset(plik2);
+ClrScr;
+
+a:=1;
+repeat
+ 
+begin
+read(plik2,tablica[a-1]);//bo musi byc od 0
+writeln('wprowadzone liczby to:',tablica[a-1]);
+a:=a+1;
+end;
+until a=21;
+
+close(plik2); 
+readln();
+end.
+
+
+
+
+
+7. Program tworzy 3 tablice typu integer i losuje do nich liczby. Następnie wyświetla wszystkie elementy tych tablic i zapisuje do pliku. Na koniec odczytuje dane z pliku do nowych tablic i ponownie wyświetla je na ekran.
+
+program siodmy;
+type tablicowy=array [0..5] of integer;
+     tablicowy2=tablicowy;
+var
+   tab,tab1,tab2:tablicowy;
+   plik:file of tablicowy2;
+   tablica,tablica1,tablica2:tablicowy;
+   i:integer;
+begin
+  assign(plik,'tablice.dat');
+  rewrite(plik);
+  randomize;
+  for i:=1 to 5 do
+                  begin
+                   tab[i-1]:=random(30);
+                   tab1[i-1]:=random(50);
+                   tab2[i-1]:=random(60);
+                   writeln('tab1: ',tab[i-1]);
+                   writeln('tab2: ',tab1[i-1]);
+                   writeln('tab3: ',tab2[i-1]);
+                  end;
+
+  write(plik,tab);
+  write(plik,tab1);
+  write(plik,tab2);
+  reset(plik);
+  read(plik,tablica);
+  read(plik,tablica1);
+  read(plik,tablica2);
+  for i:=1 to 5 do
+                  begin
+                   writeln('tablica1: ',tablica[i-1]);
+                   writeln('tablica2: ',tablica1[i-1]);
+                   writeln('tablica3: ',tablica2[i-1]);
+                  end;
+  close(plik);
+  readln();
+end.
+
+8. Program wyszukuje wartość w tablicy n elementowej i wyświetla, w której komórce dana wartość się znajduje. Jeśli wartości nie ma w tablicy wyświetla wynik -1.
+program osmy;
+type tablicowy = array of integer;
+var
+  tab : tablicowy;
+  n,k,i,szukaj: integer;
+
+begin
+  readln(n);
+  randomize;
+  SetLength(tab,n);
+
+  for i :=low(tab) to high(tab) do
+    begin
+    tab[i]:=random(15);
+    writeln('tab',i,' : ',tab[i-1]);
+    end;
+  write('wprowadz szukana ');
+  readln(k);
+   writeln;
+
+   Szukaj:=-1;
+
+  for i:=low(tab) to high(tab) do
+    if tab[i]=k then
+    begin
+      Szukaj:= i+1;
+    end;
+
+  writeln(Szukaj);
+  writeln;
+
+  readln();
+end.
