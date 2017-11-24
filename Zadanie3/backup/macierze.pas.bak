@@ -6,35 +6,35 @@ const
 
 type
   kwadrat = Array [0..n,0..n] of Integer;
-
-
+  indeks = 0..n;
 procedure wypelnij( var tab:kwadrat );
-procedure wyswietl( const tab:kwadrat );
-function wyznacznik( tab:kwadrat ):Integer;
-
+//procedure wyswietl( const tab:kwadrat );
+function wyznacznik( const tab:kwadrat ):Integer;
 
 implementation
-function wyznacznik( tab:kwadrat ):Integer;
+//type
+
+function wyznacznik( const tab:kwadrat ):Integer;
 var
-  rec_a, rec_b, rec_l, rec_w:Integer;
+  rec_a, rec_b, rec_l, rec_w:indeks;
   tmp, minor, iloczynd, iloczynu:Integer;
 begin
-  writeln();
   tmp := 0;
-  if ( high(tab) = 0 ) then
-    wyznacznik := tab[1,1]
-  else if ( high(tab) = 1 ) then
-    wyznacznik := tab[0,0]*tab[1,1] - tab[0,1]*tab[1,0]
-  else if ( high(tab) = 2 ) then
-  begin
-    for rec_a := low(tab) to high(tab) do
-    begin
-      tmp := tmp + tab[ low(tab) , rec_a ] * tab[ succ(low(tab)) , succ(rec_a) mod (n+1) ] * tab[ succ(succ(low(tab))) , succ(succ(rec_a)) mod (n+1) ];
-      tmp := tmp - tab[ high(tab) , rec_a ] * tab[ pred(high(tab)) , succ(rec_a) mod (n+1) ] * tab[ pred(pred(high(tab))) , succ(succ(rec_a)) mod (n+1) ];
-    end;
-    wyznacznik := tmp;
-  end
-  else if ( high(tab) = 3 ) then
+  //if ( high(tab) = 0 ) then
+  //  wyznacznik := tab[1,1]
+  //else if ( high(tab) = 1 ) then
+  //  wyznacznik := tab[0,0]*tab[1,1] - tab[0,1]*tab[1,0]
+  //else if ( high(tab) = 2 ) then
+  //begin
+  //  for rec_a := low(tab) to high(tab) do
+  //  begin
+  //    tmp := tmp + tab[ low(tab) , rec_a ] * tab[ succ(low(tab)) , succ(rec_a) mod (n+1) ] * tab[ succ(succ(low(tab))) , succ(succ(rec_a)) mod (n+1) ];
+  //    tmp := tmp - tab[ high(tab) , rec_a ] * tab[ pred(high(tab)) , succ(rec_a) mod (n+1) ] * tab[ pred(pred(high(tab))) , succ(succ(rec_a)) mod (n+1) ];
+  //  end;
+  //  wyznacznik := tmp;
+  //end
+  //else
+  if ( high(tab) = 3 ) then
   begin
     tmp:=0;
 
@@ -53,10 +53,10 @@ begin
 
         for rec_b := low(tab) to (high(tab)-1) do
         begin
-          if ( ( rec_w mod (n+1) ) = rec_a ) then
+          if ( ( rec_w mod (high(tab)+1) ) = rec_a ) then
             Inc(rec_w);
-          iloczynd := iloczynd * tab[ rec_b , rec_w mod (n+1) ];
-          iloczynu := iloczynu * tab[ ( high(tab) -1 - rec_b ), rec_w mod (n+1) ];
+          iloczynd := iloczynd * tab[ rec_b , rec_w mod (high(tab)+1) ];
+          iloczynu := iloczynu * tab[ ( high(tab) -1 - rec_b ), rec_w mod (high(tab)+1) ];
           Inc(rec_w);
         end;
 
@@ -71,11 +71,9 @@ begin
     end;
 
     wyznacznik := tmp;
-
-
-  end
-  else
-    wyznacznik := 0;
+  end;
+  //else
+  //  wyznacznik := 0;
 end;
 
 procedure wypelnij( var tab:kwadrat );
@@ -91,19 +89,19 @@ begin
   end;
 end;
 
-procedure wyswietl( const tab:kwadrat );
-var
-  rec_a, rec_b : Integer;
-begin
-  for rec_a:=low(tab) to high(tab) do
-  begin
-    for rec_b:=low(tab[rec_a]) to high(tab[rec_a]) do
-    begin
-      write(tab[rec_a,rec_b]:3);
-    end;
-    writeln();
-  end;
-end;
+//procedure wyswietl( const tab:kwadrat );
+//var
+//  rec_a, rec_b : Integer;
+//begin
+//  for rec_a:=low(tab) to high(tab) do
+//  begin
+//    for rec_b:=low(tab[rec_a]) to high(tab[rec_a]) do
+//    begin
+//      write(tab[rec_a,rec_b]:3);
+//    end;
+//    writeln();
+//  end;
+//end;
 
 end.
 

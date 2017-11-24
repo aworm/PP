@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="61" Y="46"/>
+        <UsageCount Value="31"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="filatel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Filatel"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="149"/>
+        <FoldState Value=" T3i40A9 pidjQ0C2~"/>
+        <UsageCount Value="31"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\AppData\Local\Temp\Temp1_Rekrurencja.zip\UnitMain.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
+        <CursorPos X="44" Y="31"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\Downloads\Rekrurencja\UnitMain.pas"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="82" Y="21"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectSession>
+</CONFIG>

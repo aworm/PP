@@ -1,0 +1,10 @@
+ 0#                                  0   0.00
+ 1#                     Samolot#1 1970   1.20
+ 2#                    Samochod#3 1940   0.50
+ 3#                      Papiez#4 1970   4.75
+ 4#                     Samolot#3 1933   5.10
+ 5#                     Samolot#1 1990   4.50
+ 6#                        Unikat 1964  10.90
+ 7#                     Samolot#1 1982   3.20
+ 8#                      Papiez#2 1990   2.60
+ 9#                     Samolot#3 1933   3.70
