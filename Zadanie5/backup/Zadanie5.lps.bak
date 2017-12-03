@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="Zadanie5.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="16"/>
+        <CursorPos X="30" Y="41"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="21" Column="17"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="18" Column="17"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="23" Column="33"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="37" Column="21"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="40" Column="18" TopLine="3"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="42" Column="12" TopLine="3"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="40" Column="17" TopLine="3"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="31" Column="28" TopLine="3"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="41" Column="3" TopLine="5"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="38" Column="11" TopLine="6"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="43" Column="16" TopLine="6"/>
+      </Position11>
+      <Position12>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="17" Column="21" TopLine="5"/>
+      </Position12>
+      <Position13>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="41" Column="45" TopLine="10"/>
+      </Position13>
+      <Position14>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="36" Column="17" TopLine="15"/>
+      </Position14>
+      <Position15>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="38" Column="24" TopLine="15"/>
+      </Position15>
+      <Position16>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="36" Column="17" TopLine="15"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="38" Column="25" TopLine="15"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="32" Column="20" TopLine="15"/>
+      </Position18>
+      <Position19>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="48" Column="48" TopLine="12"/>
+      </Position19>
+      <Position20>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="62" Column="12" TopLine="28"/>
+      </Position20>
+      <Position21>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="48" Column="23" TopLine="27"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="46" Column="28" TopLine="22"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="49" Column="44" TopLine="23"/>
+      </Position23>
+      <Position24>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="71" Column="16" TopLine="29"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="67" Column="16" TopLine="38"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="14" Column="20" TopLine="6"/>
+      </Position26>
+      <Position27>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="70" Column="76" TopLine="38"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="47" Column="103" TopLine="24"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="42" Column="11" TopLine="16"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Zadanie5.lpr"/>
+        <Caret Line="64" Column="21" TopLine="19"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="tablica"/>
+      </Item1>
+    </Watches>
+  </Debugging>
+</CONFIG>

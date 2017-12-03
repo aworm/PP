@@ -1,0 +1,123 @@
+{
+
+^ - interpretuje zmienna jako adres
+@ - pobiera adres wskazanej zmiennej
+
+}
+program Labolatorium5;
+
+//const
+  //max=10;
+
+type
+  //pInt=^Integer;
+
+  TOsoba=Record
+    imie:String[25];
+    nazwisko:String[25];
+    wiek:Integer;
+  end;
+
+  TDynamicznaTablica=Record
+    glowa:^TOsoba;
+    rozmiar:Integer;
+  end;
+
+var
+  //p:pInt;
+  i:Integer;
+  dTablica:TDynamicznaTablica;
+  osoba:TOsoba;
+  pOsoba:^TOsoba;
+  nowy:Integer;
+
+begin
+  with osoba do
+  begin
+    imie:='Jan';
+    nazwisko:='Kowalski';
+    wiek:=40;
+  end;
+
+  dTablica.rozmiar:=2;
+  with dTablica do
+  begin
+    GetMem(glowa,SizeOf(TOsoba)*rozmiar);
+    for i:=0 to rozmiar-1 do
+    begin
+      glowa[i]:=osoba;
+    end;
+  end;
+
+  with dTablica do
+  begin
+    for i:=0 to rozmiar-1 do
+    begin
+      with glowa[i] do
+        WriteLn(imie:26, nazwisko:26, wiek:3);
+    end;
+  end;
+
+  nowy:=5;
+  GetMem(pOsoba,SizeOf(tOsoba)*nowy);
+
+  with dTablica do
+  begin
+    for i:=0 to rozmiar-1 do
+    begin
+      pOsoba[i]:=glowa[i];
+    end;
+  end;
+
+  with dTablica do
+    FreeMem(glowa,SizeOf(TOsoba)*rozmiar);
+
+  with dTablica do
+  begin
+    rozmiar:=nowy;
+    glowa:=pOsoba;
+    pOsoba:=nil;
+  end;
+
+  with dTablica do
+  begin
+    for i:=0 to rozmiar-1 do
+    begin
+      with glowa[i] do
+      begin
+        if(glowa[i] <> nil) then
+          WriteLn(imie:26, nazwisko:26, wiek:3);
+      end;
+    end;
+  end;
+
+{ Podstawowe operajca na wskaznikach }
+  //New(p);                      -- pojedyncza deklaracja
+  //dispose(p);                  -- zwalnianie pamieci
+  //p:=nil;
+
+{ Tablice dynamiczne }
+  //GetMem(p,SizeOf(Integer)*max);
+  //for i:=0 to max do
+  //  p[i]:=i;
+  //for i:=0 to max do            //alternatywne odwolanie (p+i)^
+  //  WriteLn((p+i)^);
+  //FreeMem(p,SizeOf(Integer)*max);
+
+{ Operajca na wskaznikach na Rekordy }
+  //new(pOsoba);
+  //with pOsoba^ do
+  //begin
+  //  imie:='Jan';
+  //  nazwisko:='Kowalski';
+  //  wiek:=10;
+  //end;
+  //with pOsoba^ do
+  //  WriteLn(imie:30, ' ' , nazwisko:30 , ' ' , wiek:5);
+  //dispose(pOsoba);
+  with dTablica do
+    FreeMem(glowa,SizeOf(TOsoba)*rozmiar);
+
+  ReadLn();
+end.
+

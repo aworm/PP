@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="Labolatorium5.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="72"/>
+        <CursorPos X="11" Y="89"/>
+        <FoldState Value=" T0Z246"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="18" Column="18"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="21" Column="10"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="30" Column="11"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="21" Column="8"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="19" Column="8"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="24" Column="12"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="13" Column="37"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="12" Column="12"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="18" Column="19"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="19" Column="13"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="27" Column="6"/>
+      </Position11>
+      <Position12>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="30" Column="13"/>
+      </Position12>
+      <Position13>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="17" Column="13"/>
+      </Position13>
+      <Position14>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="23" Column="33"/>
+      </Position14>
+      <Position15>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="12" Column="90"/>
+      </Position15>
+      <Position16>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="23" Column="7"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="25" Column="8"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="35" Column="7"/>
+      </Position18>
+      <Position19>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="9" Column="6"/>
+      </Position19>
+      <Position20>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="48" Column="20"/>
+      </Position20>
+      <Position21>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="43" Column="5" TopLine="8"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="42" Column="8" TopLine="17"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="45" Column="12" TopLine="18"/>
+      </Position23>
+      <Position24>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="26" Column="11" TopLine="5"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="39" Column="14" TopLine="7"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="10" Column="10"/>
+      </Position26>
+      <Position27>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="54" Column="31" TopLine="10"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="56" Column="24" TopLine="30"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="57" Column="45" TopLine="36"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Labolatorium5.lpr"/>
+        <Caret Line="79" Column="7" TopLine="36"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
