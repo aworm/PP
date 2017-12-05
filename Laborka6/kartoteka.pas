@@ -28,7 +28,7 @@ type
   Pelem = ^Elem;
 
   Elem = record
-    dane: TOsoba;
+    Dane: TOsoba;
     Next: Pelem;
   end;
 
@@ -38,6 +38,8 @@ procedure push(var glowa: Pelem);
 procedure push_bck(var glowa: Pelem);
 
 procedure pop(var glowa: Pelem);
+
+procedure pop_bck(var glowa: Pelem);
 
 procedure print(const glowa: Pelem);
 
@@ -65,21 +67,22 @@ end;
 
 procedure push_bck(var glowa: Pelem);
 var
-  tmp:Pelem;
+  tmp: Pelem;
 begin
-  if (glowa=nil) then
+  if (glowa = nil) then
   begin
     new(glowa);
-    glowa^.dane:=CreateOsoba();
-    glowa^.next:=nil;
-  end else
+    glowa^.dane := CreateOsoba();
+    glowa^.Next := nil;
+  end
+  else
   begin
-    tmp:=glowa;
-    while (tmp^.next<>nil) do
-      tmp:=tmp^.next;
-    new(tmp^.next);
-    tmp^.next^.dane:=CreateOsoba();
-    tmp^.next^.next:=nil;
+    tmp := glowa;
+    while (tmp^.Next <> nil) do
+      tmp := tmp^.Next;
+    new(tmp^.Next);
+    tmp^.Next^.dane := CreateOsoba();
+    tmp^.Next^.Next := nil;
   end;
 end;
 
@@ -97,6 +100,27 @@ begin
     WriteLn('Lista jest pusta');
 end;
 
+procedure pop_bck(var glowa: Pelem);
+var
+  tmp: Pelem;
+begin
+  if (glowa=nil) then
+    WriteLn('Lista jest pusta')
+  else if (glowa^.next=nil) then
+  begin
+    dispose(glowa);
+    glowa:=nil;
+  end else
+  begin
+    tmp:=glowa;
+    while(tmp^.next^.next<>nil) do
+      tmp:=tmp^.next;
+
+    dispose(tmp^.next);
+    tmp^.next:=nil;
+  end;
+end;
+
 procedure print(const glowa: Pelem);
 var
   tmp: Pelem;
@@ -106,7 +130,7 @@ begin
   rec_a := 1;
   while (tmp <> nil) do
   begin
-    WriteLn(rec_a:3, tmp^.dane.imie:26, tmp^.dane.nazwisko:26, tmp^.dane.pesel:20);
+    WriteLn(rec_a: 3, tmp^.dane.imie: 26, tmp^.dane.nazwisko: 26, tmp^.dane.pesel: 20);
     Inc(rec_a);
     tmp := tmp^.Next;
   end;

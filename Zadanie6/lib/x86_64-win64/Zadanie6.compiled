@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\Users\mmorawiec\Studia\Lazarus\fpc\3.0.2\bin\x86_64-win64\fpc.exe" Date="1247516907"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FiC:\Users\mmorawiec\Studia\PP\Zadanie6\lib\x86_64-win64 -FuC:\Users\mmorawiec\Studia\PP\Zadanie6\ -FUC:\Users\mmorawiec\Studia\PP\Zadanie6\lib\x86_64-win64\ Zadanie6.pas"/>
+</CONFIG>
