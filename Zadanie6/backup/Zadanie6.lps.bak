@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="4">
       <Unit0>
         <Filename Value="Zadanie6.pas"/>
         <IsPartOfProject Value="True"/>
@@ -16,14 +16,32 @@
         <Filename Value="kartoteka.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="Kartoteka"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="133"/>
+        <TopLine Value="42"/>
         <CursorPos Y="206"/>
-        <FoldState Value=" T3iA0T711V"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="..\..\Lazarus\units\x86_64-win64\win32\confirmpkglistdlg.lfm"/>
+        <ComponentName Value="ConfirmPackageListDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\Downloads\unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="117"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
